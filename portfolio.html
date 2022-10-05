@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфоліо</title>
+    <!-- Fonds -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <!-- Нормалізація -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Мої стилі  -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header__container container">
+        <a class="logo__link--header logo__link link" href="./index.html" lang="en">
+          <span class="logo__link--header-web">Web</span>Studio</a
+        >
+        <nav class="nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a class="nav__link link" href="./index.html">Студія</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link--active link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__countacts">
+          <ul class="header__list list">
+            <li class="header__item">
+              <div class="header__container-conts">
+                <a
+                  class="header__conts link"
+                  href="mailto:info@devstudio.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <svg class="header__icon" width="16" height="12">
+                    <use href="./icons/icons.svg#envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a></div
+              >
+            </li>
+            <li class="header__item">
+              <div class="header__container-conts">
+                <a
+                  class="header__conts link"
+                  href="tel:+380961111111"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <svg class="header__icon" width="10" height="16">
+                    <use href="./icons/icons.svg#smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="portf section">
+        <h1 class="portf__title visually-hidden"> Портфоліо </h1>
+        <div class="portf__container container">
+          <ul class="portf__list">
+            <li><button class="portf__button" type="button">Усі</button></li>
+            <li><button class="portf__button" type="button">Веб-сайти</button></li>
+            <li><button class="portf__button" type="button">Додатки</button></li>
+            <li><button class="portf__button" type="button">Дизайн</button></li>
+            <li><button class="portf__button" type="button">Маркетинг</button></li>
+          </ul>
+          <ul class="portf__gallary">
+            <li class="portf__card">
+              <a class="portf__link" href="#" rel="noopener noreferrer">
+                <div class="portf__img-container"
+                  ><img
+                    src="./images/portfolio/img-1.jpg"
+                    alt="Включений ноутбук з фотографіями людей"
+                    width="370"
+                    height="294"
+                    class="portf__img"
+                  />
+                  <div class="portf__card-overlay">
+                    <p class="portf__img--desc">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="portf__card--container">
+                  <h2 class="portf__subtitle">Технокряк</h2>
+                  <p class="portf__text">Веб-сайт</p></div
+                >
+              </a>
+            </li>
+            <li class="portf__card">
+              <a class="portf__link" href="#" rel="noopener noreferrer">
+                <div class="portf__img-container">
+                  <img
+                    src="./images/portfolio/img-2.jpg"
+                    alt="Двоє баскетболістів борються за м'яч"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="portf__card-overlay">
+                    <p class="portf__img--desc"
+                      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint impedit nemo
+                      reiciendis quaerat enim minus veritatis voluptatibus, iusto error doloremque
+                      quos perferendis totam maiores est fugit architecto amet provident
+                      asperiores.</p
+                    ></div
+                  >
+                </div>
+                <div class="portf__card--container">
+                  <h2 class="portf__subtitle">Постер New Orlean vs Golden Star</h2>
+                  <p class="portf__text">Дизайн</p></div
+                >
+              </a>
+            </li>
+            <li class="portf__card">
+              <a class="portf__link" href="#" rel="noopener noreferrer">
+                <div class="portf__img-container">
+                  <img
+                    src="./images/portfolio/img-3.jpg"
+                    alt="Логотип у виді риби ресторану
+                Seafood"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="portf__card-overlay">
+                    <p class="portf__img--desc"
+                      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint impedit nemo
+                      reiciendis quaerat enim minus veritatis voluptatibus, iusto error doloremque
+                      quos perferendis totam maiores est fugit architecto amet provident
+                      asperiores.</p
+                    ></div
+                  >
+                </div>
+                <div class="portf__card--container">
+                  <h2 class="portf__subtitle">Ресторан Seafood</h2>
+                  <p class="portf__text">Додаток</p></div
+                >
+              </a>
+            </li>
+            <li class="portf__card">
+              <a class="portf__link" href="#" rel="noopener noreferrer">
+                <div class="portf__img-container">
+                  <img
+                    src="./images/portfolio/img-4.jpg"
+                    alt="Навушники до комп'ютера "
+                    width="370"
+                    height="294"
+                  />
+                  <div class="portf__card-overlay">
+                    <p class="portf__img--desc"
+                      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint impedit nemo
+                      reiciendis quaerat enim minus veritatis voluptatibus, iusto error doloremque
+                      quos perferendis totam maiores est fugit architecto amet provident
+                      asperiores.</p
+                    ></div
+                  >
+                </div>
+                <div class="portf__card--container">
+                  <h2 class="portf__subtitle">Проєкт Prime</h2>
+                  <p class="portf__text">Маркетинг</p></div
+                >
+              </a>
+            </li>
+            <li class="portf__card">
+              <a class="portf__link" href="#" rel="noopener noreferrer">
+                <div class="portf__img-container">
+                  <img
+                    src="./images/portfolio/img-5.jpg"
+                    alt="Філа і коричнева коробки"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="portf__card-overlay">
+                    <p class="portf__img--desc"
+                      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint impedit nemo
+                      reiciendis quaerat enim minus veritatis voluptatibus, iusto error doloremque
+                      quos perferendis totam maiores est fugit architecto amet provident
+                      asperiores.</p
+                    ></div
+                  >
+                </div>
+                <div class="portf__card--container">
+                  <h2 class="portf__subtitle">Проєкт Boxes</h2>
+                  <p class="portf__text">Додаток</p></div
+                >
+              </a>
+            </li>
+            <li class="portf__card">
+              <a class="portf__link" href="#" rel="noopener noreferrer">
+                <div class="portf__img-container">
+                  <img
+                    src="./images/portfolio/img-6.jpg"
+                    alt="Включений монітор комп'ютера з відкритим сайтом "
+                    width="370"
+                    height="294"
+                  />
+                  <div class="portf__card-overlay">
+                    <p class="portf__img--desc"
+                      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint impedit nemo
+                      reiciendis quaerat enim minus veritatis voluptatibus, iusto error doloremque
+                      quos perferendis totam maiores est fugit architecto amet provident
+                      asperiores.</p
+                    ></div
+                  >
+                </div>
+                <div class="portf__card--container">
+                  <h2 class="portf__subtitle">Inspiration has no Borders</h2>
+                  <p class="portf__text">Веб-сайт</p></div
+                >
+              </a>
+            </li>
+            <li class="portf__card">
+              <a class="portf__link" href="#" rel="noopener noreferrer">
+                <div class="portf__img-container">
+                  <img
+                    src="./images/portfolio/img-7.jpg"
+                    alt="Книжка Limited Edition"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="portf__card-overlay">
+                    <p class="portf__img--desc"
+                      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint impedit nemo
+                      reiciendis quaerat enim minus veritatis voluptatibus, iusto error doloremque
+                      quos perferendis totam maiores est fugit architecto amet provident
+                      asperiores.</p
+                    ></div
+                  >
+                </div>
+                <div class="portf__card--container">
+                  <h2 class="portf__subtitle">Видання Limited Edition</h2>
+                  <p class="portf__text">Дизайн</p></div
+                >
+              </a>
+            </li>
+            <li class="portf__card">
+              <a class="portf__link" href="#" rel="noopener noreferrer">
+                <div class="portf__img-container">
+                  <img
+                    src="./images/portfolio/img-8.jpg"
+                    alt="Вивіска LAB EL TAG"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="portf__card-overlay">
+                    <p class="portf__img--desc"
+                      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint impedit nemo
+                      reiciendis quaerat enim minus veritatis voluptatibus, iusto error doloremque
+                      quos perferendis totam maiores est fugit architecto amet provident
+                      asperiores.</p
+                    ></div
+                  >
+                </div>
+                <div class="portf__card--container">
+                  <h2 class="portf__subtitle">Проєкт LAB</h2>
+                  <p class="portf__text">Маркетинг</p></div
+                >
+              </a>
+            </li>
+            <li class="portf__card">
+              <a class="portf__link" href="#" rel="noopener noreferrer">
+                <div class="portf__img-container">
+                  <img
+                    src="./images/portfolio/img-9.jpg"
+                    alt=" Людина працює за ноутбуком"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="portf__card-overlay">
+                    <p class="portf__img--desc"
+                      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint impedit nemo
+                      reiciendis quaerat enim minus veritatis voluptatibus, iusto error doloremque
+                      quos perferendis totam maiores est fugit architecto amet provident
+                      asperiores.</p
+                    ></div
+                  >
+                </div>
+                <div class="portf__card--container">
+                  <h2 class="portf__subtitle">Growing Business</h2>
+                  <p class="portf__text">Додаток</p></div
+                >
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__first">
+          <a class="logo__link--footer logo__link link" href="./index.html" lang="en">
+            <span class="logo__link--footer-web">Web</span>Studio</a
+          >
+          <address class="footer__adress">
+            <ul class="footer__adress--list">
+              <li class="footer__adress--item">
+                <a
+                  class="footer__adress--map"
+                  href="https://goo.gl/maps/cLGHzwwjrCpjriFd6"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  м. Київ, пр-т Лесі Українки, 26
+                </a>
+              </li>
+              <li class="footer__adress--item">
+                <a
+                  class="footer__adress--link"
+                  href="mailto:info@devstudio.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer__adress--item">
+                <a
+                  class="footer__adress--link"
+                  href="tel:+380961111111"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__sec">
+          <p class="footer__sec--text">приєднуйтесь</p>
+          <ul class="footer__sec--sotials">
+            <li>
+              <a href="#" rel="noopener noreferrer" target="_blank" class="footer__sec--link link">
+                <svg class="footer__sec--icon" width="20" height="20">
+                  <use href="./icons/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                rel="noopener noreferrer"
+                target="_blank"
+                aria-label="twitter"
+                class="footer__sec--link sotials__link link"
+              >
+                <svg class="sf-icon" width="20" height="20">
+                  <use href="./icons/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                rel="noopener noreferrer"
+                target="_blank"
+                aria-label="facebook"
+                class="footer__sec--link sotials__link link"
+              >
+                <svg class="sf-icon" width="20" height="20">
+                  <use href="./icons/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                rel="noopener noreferrer"
+                target="_blank"
+                aria-label="linkedin"
+                class="footer__sec--link sotials__link link"
+              >
+                <svg class="footer__sf-icon" width="20" height="20">
+                  <use href="./icons/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__third">
+          <form class="footer__mail">
+            <label class="footer__label">
+              <strong class="footer__text">Підпишіться на розсилку</strong>
+              <div class="footer__label-container">
+                <input
+                  class="footer__mail--input"
+                  type="email"
+                  name="user-email"
+                  placeholder="E-mail"
+                />
+                <button class="footer__btn btn" type="submit">
+                  Підписатися
+                  <svg class="footer__mail--icon" width="24" height="24">
+                    <use href="./icons/icons.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </label>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
