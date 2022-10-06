@@ -1,12 +1,15 @@
 .nav {
   margin-right: auto;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .nav__link {
   transition: color $timeHoverEffect cubic-bezier(0.4, 0, 0.2, 1);
 
   &--active {
     position: relative;
-    padding-bottom: 40px;
     color: $actionalyTxtCl;
     &::after {
       content: '';
@@ -18,6 +21,14 @@
       height: 4px;
       background-color: $actionalyTxtCl;
       border-radius: 2px;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding-bottom: 49px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 40px;
     }
   }
   &:hover,

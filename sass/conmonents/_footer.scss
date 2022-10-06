@@ -8,6 +8,31 @@
 .footer__container {
   display: flex;
   align-items: baseline;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
+}
+.footer__first {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 165px;
+    margin-bottom: 60px;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .footer__adress {
@@ -47,6 +72,15 @@
     margin-bottom: 20px;
   }
 
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    text-align: center;
+    margin-left: 0;
+    margin-right: auto;
+  }
   &--sotials {
     display: flex;
     gap: 10px;
@@ -70,10 +104,26 @@
       background-color: $actionalyTxtCl;
     }
   }
+
+  @media screen and (max-width: 767px) {
+    margin-left: 0;
+  }
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer__third {
   margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    margin-left: 0;
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 .footer__text {
   display: block;
@@ -84,10 +134,27 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+.footer__label-container {
+  display: flex;
+  gap: 12px;
+
+  @media screen and (max-width: 767px) {
+    max-width: 450px;
+    display: block;
+  }
+  @media screen and (max-width: 1199px) {
+    display: block;
+  }
 }
 .footer__mail--input {
+  display: block;
   color: $whiteTxtCl;
-  width: 358px;
+  width: 450px;
   height: 50px;
   background-color: $actionalyBgCl;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -100,6 +167,20 @@
   &:hover,
   &:focus {
     border-color: $actionalyTxtCl;
+  }
+
+  @media screen and (max-width: 450px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 358px;
   }
 }
 
@@ -119,10 +200,6 @@
   }
 }
 
-.footer__label-container {
-  display: flex;
-  gap: 12px;
-}
 .footer__mail--icon {
   margin-left: 10px;
 }
