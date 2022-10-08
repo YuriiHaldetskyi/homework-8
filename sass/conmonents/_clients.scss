@@ -2,6 +2,10 @@
   display: block;
   margin: 0 auto;
   padding-top: 102px;
+
+  @media screen and (max-width: 767px) {
+    padding: 60px 0;
+  }
 }
 .clietns__title {
   line-height: calc(42 / 36);

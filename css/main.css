@@ -145,8 +145,7 @@ textarea {
 }
 @media screen and (max-width: 767px) {
   .header__container {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding: 0 15px;
   }
 }
 
@@ -349,7 +348,7 @@ textarea {
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg_img_lg-@2x.png);
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .hero {
     padding: 118px 0;
   }
@@ -637,6 +636,7 @@ textarea {
 }
 @media screen and (max-width: 767px) {
   .features__list {
+    max-width: 450px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -675,7 +675,7 @@ textarea {
 
 @media screen and (max-width: 767px) {
   .features__item {
-    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -719,17 +719,13 @@ textarea {
     text-align: center;
   }
 }
+
 .features__text {
   font-size: 14px;
   line-height: 1.7142857143;
   color: #757575;
 }
-@media screen and (max-width: 450px) {
-  .features__text {
-    max-width: 290px;
-  }
-}
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features__text {
     display: inline-block;
     width: 354px;
@@ -792,6 +788,11 @@ textarea {
   background: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
+}
+@media screen and (max-width: 767px) {
+  .team {
+    padding: 60px 0;
+  }
 }
 
 .team__title {
@@ -907,6 +908,11 @@ textarea {
   display: block;
   margin: 0 auto;
   padding-top: 102px;
+}
+@media screen and (max-width: 767px) {
+  .clients {
+    padding: 60px 0;
+  }
 }
 
 .clietns__title {
@@ -1268,7 +1274,6 @@ textarea {
       flex-wrap: wrap;
   margin-bottom: 40px;
   gap: 8px;
-  width: 326px;
 }
 @media screen and (min-width: 768px) {
   .portf__list {
@@ -1311,15 +1316,18 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .portf__gallary {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .portf__card {
   background: #ffffff;
-  -ms-flex-preferred-size: 380px;
-      flex-basis: 380px;
+  max-width: 100%;
 }
 @media screen and (min-width: 768px) {
   .portf__card {
@@ -1386,6 +1394,7 @@ textarea {
   border-bottom: 1px solid;
   border-right: 1px solid;
   border-color: #eeeeee;
+  max-width: 450px;
 }
 @media screen and (min-width: 1200px) {
   .portf__card--container {
@@ -1400,7 +1409,6 @@ textarea {
   letter-spacing: 0.06em;
   margin-bottom: 4px;
 }
-
 /* Текст під h2 */
 .portf__text {
   font-size: 16px;
@@ -1542,6 +1550,11 @@ textarea {
 }
 .menu__nav--item:focus, .menu__nav--item:hover {
   color: #2196f3;
+}
+@media screen and (max-width: 767px) {
+  .menu__nav--link {
+    font-weight: 500;
+  }
 }
 
 .menu__nav--link--active {
