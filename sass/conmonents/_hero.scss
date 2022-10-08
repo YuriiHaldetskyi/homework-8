@@ -39,6 +39,10 @@
   padding-top: 200px;
   padding-bottom: 200px;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    padding: 118px 0;
+  }
 }
 .hero__title {
   font-weight: 900;

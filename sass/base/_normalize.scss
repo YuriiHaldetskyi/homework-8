@@ -17,6 +17,7 @@ li {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 /* Скидання  */
 h1,
@@ -45,7 +46,11 @@ textarea {
   margin: -1px;
 }
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 .container {
   max-width: 767px;

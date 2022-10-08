@@ -10,10 +10,16 @@
 /* Кнопки + ховел і фокус  */
 .portf__list {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
   gap: 8px;
-  margin-bottom: 34px;
+  width: 326px;
+
+  @media screen and (min-width: 768px) {
+    width: 575px;
+    gap: 15px 8px;
+    margin: 0 auto 30px;
+  }
 }
 .portf__button {
   cursor: pointer;
@@ -44,12 +50,22 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .portf__card {
   background: $whiteTxtCl;
-  width: 370px;
-  flex-basis: (1200 - (30 * 2) / 3);
+  flex-basis: ((1200px - (30px * 2)) / 3);
+
+  @media screen and (max-width: 767px) {
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((1170px - (30px * 2)) / 3);
+  }
 }
 
 .portf__link {
@@ -65,6 +81,7 @@
 .portf__img-container {
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 .portf__card-overlay {
   position: absolute;
@@ -97,6 +114,10 @@
   border-bottom: 1px solid;
   border-right: 1px solid;
   border-color: $mainBrCl;
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
 .portf__subtitle {
   font-weight: 700;
