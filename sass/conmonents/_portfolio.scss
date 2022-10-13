@@ -58,7 +58,7 @@
 
 .portf__card {
   background: $whiteTxtCl;
-  max-width: 100%;
+  width: 100%;
 
   @media screen and (max-width: 767px) {
   }
@@ -69,7 +69,9 @@
     flex-basis: calc((1170px - (30px * 2)) / 3);
   }
 }
-
+img {
+  width: 100%;
+}
 .portf__link {
   display: block;
   transition: box-shadow $timeHoverEffect cubic-bezier(0.4, 0, 0.2, 1);

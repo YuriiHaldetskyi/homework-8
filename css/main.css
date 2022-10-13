@@ -1327,7 +1327,7 @@ textarea {
 
 .portf__card {
   background: #ffffff;
-  max-width: 100%;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .portf__card {
@@ -1340,6 +1340,10 @@ textarea {
     -ms-flex-preferred-size: 370px;
         flex-basis: 370px;
   }
+}
+
+img {
+  width: 100%;
 }
 
 .portf__link {
